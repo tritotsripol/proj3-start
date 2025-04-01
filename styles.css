@@ -328,7 +328,11 @@ select.sectionbtn option {
 }
 
 /* view on ipad */
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .column {
+    column-count: 1;}
+}
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
   .column {
     column-count: 1;}
 }
