@@ -329,8 +329,8 @@ select.sectionbtn option {
 
 /* view on ipad */
 @media (min-width: 768px) and (max-width: 1024px) {
-  .column {
-    column-count: 1 !important; }
+  .title-box,.content-box,.column {
+    column-count: 1; }
 }
 
     /* white block */
