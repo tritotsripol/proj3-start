@@ -328,13 +328,12 @@ select.sectionbtn option {
 }
 
 /* view on ipad */
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .column {
-    column-count: 1 !important;}
-}
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-  .column {
-    column-count: 1 !important;}
+    display: grid;
+    grid-template-rows: repeat(3,auto);}
+  .column > div {
+    display:grid; }
 }
 
 /* darkth */
