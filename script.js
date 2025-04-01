@@ -48,3 +48,20 @@ themeToggleButton.addEventListener('click', () => {
     prismTheme.href = 'https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css'; 
   }
 });
+
+// ipad
+function fixColumnLayout() {
+  const column = document.querySelector('.column');
+  if (window.innerWidth >= 768 && window.innerWidth <= 1024) {
+    column.style.display = 'grid';
+    column.style.gridTemplateColumns = '1fr';
+  } else {
+    column.style.display = ''; // รีเซ็ตค่าเดิม
+  }
+}
+
+// เรียกใช้เมื่อโหลดหน้าเว็บ
+fixColumnLayout();
+
+// เรียกใช้ทุกครั้งที่เปลี่ยนขนาดหน้าจอ
+window.addEventListener('resize', fixColumnLayout);
