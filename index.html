@@ -107,56 +107,54 @@
         </div>
       </div>
 
-      <section style="display: flex; flex-wrap: wrap; gap: 10px;">
-        <!-- Head -->
-        <div class="white-block" style="margin-bottom: 0;">
-          <h1 id="head">Head</h1>
-          <section class="tb">
-            <div style="font-weight:bold;" data-en="Part" data-th="ส่วนประกอบ"></div>
-            <div style="font-weight:bold;" data-en="Structure" data-th="โครงสร้าง"></div>
-            <div style="font-weight:bold;" data-en="Example" data-th="ตัวอย่าง"></div>
-          
-            <div data-en="Title" data-th="หัวข้อ"></div>
-            <div><pre><code class="language-html">&lt;title&gt;(Title of website)&lt;/title&gt;</code></pre></div>
-            <div><pre><code class="language-html">&lt;title&gt;My Website&lt;/title&gt;</code></pre></div>
+      <!-- Head -->
+      <div class="white-block" style="margin-bottom: 0;">
+        <h1 id="head">Head</h1>
+        <section class="tb">
+          <div style="font-weight:bold;" data-en="Part" data-th="ส่วนประกอบ"></div>
+          <div style="font-weight:bold;" data-en="Structure" data-th="โครงสร้าง"></div>
+          <div style="font-weight:bold;" data-en="Example" data-th="ตัวอย่าง"></div>
+        
+          <div data-en="Title" data-th="หัวข้อ"></div>
+          <div><pre><code class="language-html">&lt;title&gt;(Title of website)&lt;/title&gt;</code></pre></div>
+          <div><pre><code class="language-html">&lt;title&gt;My Website&lt;/title&gt;</code></pre></div>
 
-            <div data-en="Preview Image" data-th="ภาพตัวอย่าง"></div>
-            <div><pre><code class="language-html">&lt;meta property="og:image" content="(Preview image file)"&gt;</code></pre></div>
-            <div><pre><code class="language-html">&lt;meta property="og:image" content="favicon.png"&gt;</code></pre></div>
+          <div data-en="Preview Image" data-th="ภาพตัวอย่าง"></div>
+          <div><pre><code class="language-html">&lt;meta property="og:image" content="(Preview image file)"&gt;</code></pre></div>
+          <div><pre><code class="language-html">&lt;meta property="og:image" content="favicon.png"&gt;</code></pre></div>
 
-            <div data-en="Icon" data-th="ไอคอน"></div>
-            <div><pre><code class="language-html">&lt;link rel="icon" href="(Icon file)" type="image/(file type)"&gt;</code></pre></div>
-            <div><pre><code class="language-html">&lt;link rel="icon" href="favicon.png" type="image/png"&gt;</code></pre></div>
+          <div data-en="Icon" data-th="ไอคอน"></div>
+          <div><pre><code class="language-html">&lt;link rel="icon" href="(Icon file)" type="image/(file type)"&gt;</code></pre></div>
+          <div><pre><code class="language-html">&lt;link rel="icon" href="favicon.png" type="image/png"&gt;</code></pre></div>
 
-            <div data-en="Font" data-th="ฟอนต์"></div>
-            <div><pre><code class="language-html">&lt;link href="(Font link)" rel="stylesheet"&gt;</code></pre></div>
-            <div><pre><code class="language-html">&lt;link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap" rel="stylesheet"&gt;</code></pre></div>
-          
-            <div>Internal CSS</div>
-            <div><pre><code class="language-html">&lt;link rel="stylesheet" href="(CSS file)"&gt;</code></pre></div>
-            <div><pre><code class="language-html">&lt;link rel="stylesheet" href="styles.css"&gt;</code></pre></div>
-          
-            <div>Internal JavaScript</div>
-            <div><pre><code class="language-html">&lt;script src="(JavaScript file)" defer&gt;&lt;/script&gt;</code></pre></div>
-            <div><pre><code class="language-html">&lt;script src="script.js" defer&gt;&lt;/script&gt;</code></pre></div>
-          
-            <div data-en="Code box (light)" data-th="กล่องโค้ด (สว่าง)"></div>
-            <div style="grid-column: span 2">
-              <pre><code class="language-html">&lt;link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" rel="stylesheet" id="prism-light-theme"&gt;</code></pre>
-            </div>
+          <div data-en="Font" data-th="ฟอนต์"></div>
+          <div><pre><code class="language-html">&lt;link href="(Font link)" rel="stylesheet"&gt;</code></pre></div>
+          <div><pre><code class="language-html">&lt;link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap" rel="stylesheet"&gt;</code></pre></div>
+        
+          <div>Internal CSS</div>
+          <div><pre><code class="language-html">&lt;link rel="stylesheet" href="(CSS file)"&gt;</code></pre></div>
+          <div><pre><code class="language-html">&lt;link rel="stylesheet" href="styles.css"&gt;</code></pre></div>
+        
+          <div>Internal JavaScript</div>
+          <div><pre><code class="language-html">&lt;script src="(JavaScript file)" defer&gt;&lt;/script&gt;</code></pre></div>
+          <div><pre><code class="language-html">&lt;script src="script.js" defer&gt;&lt;/script&gt;</code></pre></div>
+        
+          <div data-en="Code box (light)" data-th="กล่องโค้ด (สว่าง)"></div>
+          <div style="grid-column: span 2">
+            <pre><code class="language-html">&lt;link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" rel="stylesheet" id="prism-light-theme"&gt;</code></pre>
+          </div>
 
-            <div data-en="Code box (dark)" data-th="กล่องโค้ด (มืด)"></div>
-            <div style="grid-column: span 2">
-              <pre><code class="language-html">&lt;link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" id="prism-light-theme"&gt;</code></pre>
-            </div>
-          
-            <div data-en="Script together with code boxes" data-th="สคริปต์คู่กับกล่องโค้ดทั้งหมด"></div>
-            <div style="grid-column: span 2">
-              <pre><code class="language-html">&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"&gt;&lt;/script&gt;</code></pre>
-            </div>
-          </section>
-        </div>
-      </section>
+          <div data-en="Code box (dark)" data-th="กล่องโค้ด (มืด)"></div>
+          <div style="grid-column: span 2">
+            <pre><code class="language-html">&lt;link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" id="prism-light-theme"&gt;</code></pre>
+          </div>
+        
+          <div data-en="Script together with code boxes" data-th="สคริปต์คู่กับกล่องโค้ดทั้งหมด"></div>
+          <div style="grid-column: span 2">
+            <pre><code class="language-html">&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"&gt;&lt;/script&gt;</code></pre>
+          </div>
+        </section>
+      </div>
     </section>
   </section>
 
