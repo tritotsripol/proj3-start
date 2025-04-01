@@ -334,7 +334,7 @@ select.sectionbtn option {
   .column {
     column-count: 1; }
 }
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait){
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape){
   .column {
     column-count: 2; }
 }
