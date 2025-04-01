@@ -330,11 +330,11 @@ select.sectionbtn option {
 /* view on ipad */
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   .column {
-    display: block;}
+    column-count: 1 !important;}
 }
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
   .column {
-    display: block;}
+    column-count: 1 !important;}
 }
 
 /* darkth */
