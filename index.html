@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Start Coding (HTML)</title>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" id="prism-theme">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" rel="stylesheet" id="prism-light-theme" disabled>
+  <meta property="og:image" content="favicon.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.png" type="image/png">
+  <style>
+    .Kanit {
+      font-family: 'Kanit', sans-serif;
+      font-weight: 400;
+    }
+    pre {
+      border-radius: 10px;
+      width: max-content;
+      padding: 5px !important;
+      display: inline;
+    }
+    .codebr pre {
+      display: block;
+      padding: 5px !important;
+      white-space: normal;
+      word-wrap: break-word;
+    }
+  </style>
+</head>
+<body class="Kanit bodys">
+  <section class="header">
+    <div><img src="favicon.png" width="75px" height="75px" alt="favicon"></div>
+    <div><h1 style="font-size: 50px; line-height: 1em">Trithod Site</h1></div>
+    <div class="home"><a href="https://tritotsripol.github.io/trithodhome/"><button data-en="Home" data-th="หน้าหลัก"></button></a></div>
+  </section>
+้
+  <section class="web">
+    <section class="title-box">
+      <h1 style="font-size: 50px;" data-en="Start Coding (HTML)" data-th="เริ่มการสร้างเว็บไซต์ (HTML)"></h1>
+    </section>
+
+    <section class="contents-box">
+      <div><h2 class="contentline" data-en="Contents" data-th="เนื้อหา"></h2></div>
+      <div><a href="#htmlboi">HTML Boilerplate</a></div>
+      <div><a href="#head">Head</a></div>
+      <div><a href="#internexter">Internal & External<body></a></div>
+    </section>
+
+  <section class="column">
+      <!-- HTML Boilerplate -->
+      <div class="blue-block" style="white-space: nowrap;">
+        <h1 id="htmlboi">HTML Boilerplate</h1>
+        <div style="display: flex; flex-wrap: nowrap; align-items: center; gap: 10px;">
+          <p data-en="To type the HTML Boilerplate, type the shortcut" data-th="ในการพิมพ์โครงสร้างพื้นฐาน HTML ให้พิมพ์คีย์ลัด"></p>
+          <pre style="min-width: max-content;"><code class="language-html">html:5</code></pre>
+          <p data-en=" and press Enter." data-th="แล้วกด Enter"></p>
+        </div>
+        <div data-en="The content displayed after pressing Enter:" data-th="สิ่งที่แสดงหลังจากกด Enter:"></div>
+        <div class="codebr">
+          <pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+        </div>
+      </div>
+
+      <!-- InternalExternal -->
+      <div class="blue-block">
+        <h1 id="internexter" style="white-space: nowrap;">Internal & External</h1>
+        <div class="ine">
+          <div>
+            <b>Internal CSS: </b>
+          </div>
+          <div style="border-right: 1px white solid">
+            <pre><code class="language-html">&lt;link rel="stylesheet" href="(CSS file)"&gt;</code></pre>
+          </div>
+          <div>
+            <b>External CSS: </b>
+          </div>
+          <div>
+            <pre><code class="language-html">&lt;style&gt; ...(CSS code)... &lt;/style&gt;</code></pre>
+          </div>
+
+          <div>
+            <b>Internal JavaScript: </b>
+          </div>
+          <div style="border-right: 1px white solid">
+            <pre><code class="language-html">&lt;script src="(JavaScript file)" defer&gt;&lt;/script&gt;</code></pre>
+          </div>
+          <div>
+            <b>External JavaScript: </b>
+          </div>
+          <div>
+            <pre><code class="language-html">&lt;script&gt; ...(JavaScript code)... &lt;/script&gt;</code></pre>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Head -->
+      <div class="white-block" style="margin-bottom: 0;">
+        <h1 id="head">Head</h1>
+        <section class="tb">
+          <div style="font-weight:bold;" data-en="Part" data-th="ส่วนประกอบ"></div>
+          <div style="font-weight:bold;" data-en="Structure" data-th="โครงสร้าง"></div>
+          <div style="font-weight:bold;" data-en="Example" data-th="ตัวอย่าง"></div>
+        
+          <div data-en="Title" data-th="หัวข้อ"></div>
+          <div><pre><code class="language-html">&lt;title&gt;(Title of website)&lt;/title&gt;</code></pre></div>
+          <div><pre><code class="language-html">&lt;title&gt;My Website&lt;/title&gt;</code></pre></div>
+
+          <div data-en="Preview Image" data-th="ภาพตัวอย่าง"></div>
+          <div><pre><code class="language-html">&lt;meta property="og:image" content="(Preview image file)"&gt;</code></pre></div>
+          <div><pre><code class="language-html">&lt;meta property="og:image" content="favicon.png"&gt;</code></pre></div>
+
+          <div data-en="Icon" data-th="ไอคอน"></div>
+          <div><pre><code class="language-html">&lt;link rel="icon" href="(Icon file)" type="image/(file type)"&gt;</code></pre></div>
+          <div><pre><code class="language-html">&lt;link rel="icon" href="favicon.png" type="image/png"&gt;</code></pre></div>
+
+          <div data-en="Font" data-th="ฟอนต์"></div>
+          <div><pre><code class="language-html">&lt;link href="(Font link)" rel="stylesheet"&gt;</code></pre></div>
+          <div><pre><code class="language-html">&lt;link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap" rel="stylesheet"&gt;</code></pre></div>
+        
+          <div>Internal CSS</div>
+          <div><pre><code class="language-html">&lt;link rel="stylesheet" href="(CSS file)"&gt;</code></pre></div>
+          <div><pre><code class="language-html">&lt;link rel="stylesheet" href="styles.css"&gt;</code></pre></div>
+        
+          <div>Internal JavaScript</div>
+          <div><pre><code class="language-html">&lt;script src="(JavaScript file)" defer&gt;&lt;/script&gt;</code></pre></div>
+          <div><pre><code class="language-html">&lt;script src="script.js" defer&gt;&lt;/script&gt;</code></pre></div>
+        
+          <div data-en="Code box (light)" data-th="กล่องโค้ด (สว่าง)"></div>
+          <div style="grid-column: span 2">
+            <pre><code class="language-html">&lt;link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" rel="stylesheet" id="prism-light-theme"&gt;</code></pre>
+          </div>
+
+          <div data-en="Code box (dark)" data-th="กล่องโค้ด (มืด)"></div>
+          <div style="grid-column: span 2">
+            <pre><code class="language-html">&lt;link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" id="prism-light-theme"&gt;</code></pre>
+          </div>
+        
+          <div data-en="Script together with code boxes" data-th="สคริปต์คู่กับกล่องโค้ดทั้งหมด"></div>
+          <div style="grid-column: span 2">
+            <pre><code class="language-html">&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"&gt;&lt;/script&gt;</code></pre>
+          </div>
+        </section>
+      </div>
+    </section>
+  </section>
+
+
+  <section class="buttons">
+    <!-- languagebtn -->
+    <div>
+      <select class="sectionbtn" id="option" name="option" onchange="changeLanguage(this.value)">
+        <option value="en">ENG</option>
+        <option value="th">ไทย</option>
+      </select>
+    </div>
+  
+      <!-- light theme -->
+      <div>
+        <button class="themebtn" id="theme-toggle">
+          <img class="themeicon" id="theme-icon" src="moon-icon.png" alt="Theme Icon" width="25" height="25">
+        </button>
+      </div>
+  
+      <!-- ฺgo to top btn -->
+      <div>
+        <button class="gotop">
+        <img src="up-icon.png" width="25" height="25" class="uppy">
+        </button>
+      </div>
+  </section>
+  
+  <section class="footer"
+    data-en="© 2025 Trithod Site. Made by Trithot Sripol."
+    data-th="© 2568 Trithod Site. จัดทำโดย ไตรทศ ศรีพล.">
+  </section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
