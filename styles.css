@@ -93,9 +93,7 @@ body {
   padding-right:10px;
   border-radius: 25px;
   margin-bottom: 1em;
-  background-image: url(trianpat.jpg);
-  background-size: auto 750px;
-  background-repeat: repeat;
+  background: linear-gradient(to bottom, #0284c7, #075985);
 }
 .contents-box {
   background: linear-gradient(to bottom, #f0f9ff, #bae6fd);
@@ -114,7 +112,7 @@ body {
   flex-wrap: wrap;
 }
 .contentline {
-  border-right: 1px solid #0369a1; 
+  border-right: 1px solid #0369a180; 
   padding-right: 1em;
 }
 .contents-box > div > a {
@@ -192,7 +190,7 @@ body {
   padding: 1em;
 }
 .tb>div:nth-child(-n+3) {
-  border-bottom: solid 1px #0284c7;
+  border-bottom: solid 1px #0284c780;
 }
 .ine {
   display:grid;
@@ -345,32 +343,31 @@ select.sectionbtn option {
 body.light {
   background-color: #bae6fd;
 }
-body.light .title-box {
-  color: white;
-  filter:brightness(125%);
-}
 body.light .contents-box {
   background: linear-gradient(to bottom, #ffffff, #ebf7ff);
-  color: #0ea5e9;
+  color: #5384d3;
 }
 body.light .contents-box > div > a {
-  color: #0ea5e9;
+  color: #5384d3;
 }
 body.light .contents-box > div > a:hover {
-  color: #0284c7;
+  color: #1c4fa1;
 }
 body.light .contentline {
-  border-right: 1px solid #0ea5e9;
+  border-right: 1px solid #5384d380;
+}
+body.light .tb>div:nth-child(-n+3) {
+  border-bottom: solid 1px #5384d380;
 }
 
 
-body.light .blue-block {
-  background: linear-gradient(to bottom, #0ea5e9, #58caff);
+body.light .blue-block, body.light .title-box {
+  background: linear-gradient(to bottom, #58c1f5, #5384d3);
   color: white;
 }
 body.light .blue-block:hover {
   transform: scale(1.01);
-  box-shadow: 0px 0px 20px #0ea5e980;
+  box-shadow: 0px 0px 20px #58c1f580;
 }
 body.light .white-block:hover {
   transform: scale(1.01);
@@ -378,13 +375,13 @@ body.light .white-block:hover {
 }
 body.light .white-block {
   background: linear-gradient(to bottom, #ffffff, #ebf7ff);
-  color: #0ea5e9;
+  color: #5384d3;
 }
 body.light .white-block::-webkit-scrollbar-thumb {
   background: linear-gradient(
     to right,
-    #0ea5e9bf,
-    #58caffbf
+    #58c1f5bf,
+    #5384d3bf
   );
 }
 
@@ -392,17 +389,17 @@ body.light::-webkit-scrollbar {
   background: rgba(255,255,255, 0.5);
 }
 body.light::-webkit-scrollbar-thumb {
-  background: #0ea5e980;
+  background: #58c1f5bf;
 }
 
 body.light .gotop, body.light .themebtn {
   background-color: rgba(255,255,255,0.5);
-  border: solid 1px white;
-  box-shadow:0 0 5px #0ea5e980;
+  border: solid 1px #ffffff80;
+  box-shadow:0 0 5px #58c1f580;
   transition: background-color 1s ease, box-shadow 1s ease;
 }
 body.light .gotop:hover, body.light .themebtn:hover {
-  background-color: white;
+  background-color: #ffffff80;
   box-shadow: 0 0 5px rgba(255,255,255, 1);
 }
 body.light .uppy, body.light .themeicon {
@@ -411,8 +408,8 @@ body.light .uppy, body.light .themeicon {
 }
 body.light .sectionbtn {
   background-color: rgba(255,255,255,0.5);
-  border: solid 1px white;
-  box-shadow:0 0 5px #0ea5e980;
+  border: solid 1px #ffffff80;
+  box-shadow:0 0 5px #58c1f580;
   transition: background-color 1s ease, color 1s ease, box-shadow 1s ease;
 }
 body.light .sectionbtn:hover {

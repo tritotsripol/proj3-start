@@ -49,19 +49,12 @@ themeToggleButton.addEventListener('click', () => {
   }
 });
 
-// ipad
-function fixColumnLayout() {
-  const column = document.querySelector('.column');
-  if (window.innerWidth >= 768 && window.innerWidth <= 1024) {
-    column.style.display = 'grid';
-    column.style.gridTemplateColumns = '1fr';
-  } else {
-    column.style.display = ''; // รีเซ็ตค่าเดิม
-  }
-}
+//--hori scroll
+const tabsList = document.querySelectorAll('.white-block, .blue-block');
 
-// เรียกใช้เมื่อโหลดหน้าเว็บ
-fixColumnLayout();
-
-// เรียกใช้ทุกครั้งที่เปลี่ยนขนาดหน้าจอ
-window.addEventListener('resize', fixColumnLayout);
+tabsList.forEach(tabs => {
+  tabs.addEventListener('wheel', (e) => {
+    e.preventDefault(); 
+    tabs.scrollLeft += e.deltaY * 0.5;
+  });
+});
