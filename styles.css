@@ -3,14 +3,14 @@ h1 {
   margin-top: 25px;
   margin-bottom:25px;
 }
-.bodys::-webkit-scrollbar {
+body::-webkit-scrollbar {
   background: rgba(0,0,0, 0.5);
   border-radius: 25px;
   width: 15px;
   height: 15px;
 }
-.bodys::-webkit-scrollbar-thumb {
-  background: rgba(255,255,255,0.5);
+body::-webkit-scrollbar-thumb {
+  background: #0284c7;
   border-radius: 25px;
   width: 50%;
   height: 15px;
@@ -70,7 +70,7 @@ h1 {
   margin:0 25px 25px 25px;
 }
 body {
-  background-color: #082f49 ;
+  background-color: #222d35 ;
   margin: 0;
 }
 .column {
@@ -91,20 +91,22 @@ body {
   padding-bottom: 1em;
   padding-left:10px;
   padding-right:10px;
-  border-radius: 25px;
+  border-radius: 15px;
   margin-bottom: 1em;
-  background: linear-gradient(to bottom, #0284c7, #075985);
+  border: 1px solid #0284c7;
+  background: linear-gradient(to bottom, #0284c780, #0284c720);
 }
 .contents-box {
-  background: linear-gradient(to bottom, #f0f9ff, #bae6fd);
-  border-radius: 25px;
+  border: 1px solid #f0f9ff;
+  background: linear-gradient(to bottom, #f0f9ff80, #f0f9ff20);
+  border-radius: 15px;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   padding-left:2em;
   padding-right:2em;
   margin-top: 1em;
   margin-bottom: 1em;
-  color: #0369a1;
+  color: white;
   display: flex;
   align-items: center;
   gap: 5%;
@@ -112,74 +114,81 @@ body {
   flex-wrap: wrap;
 }
 .contentline {
-  border-right: 1px solid #0369a180; 
+  border-right: 1px solid #ffffff40; 
   padding-right: 1em;
+}
+.inex {
+  border-right: 1px solid #ffffff40;
 }
 .contents-box > div > a {
   text-decoration: none;
-  color: #0369a1;
+  color: white;
   cursor: pointer;
   transition: 0.5s;
 }
 .contents-box > div > a:hover {
-  color: #082f49;
   font-weight: bold;
   font-size: large;
+  background-color: #ffffff40;
+  padding: 5px 10px 5px 10px;
+  border-radius: 10px;
 }
 
 /* blue block */
 .blue-block {
   overflow-y: auto;
-  background: linear-gradient(to bottom, #0284c7, #075985);
+  border: 1px solid #0284c7;
+  background: linear-gradient(to bottom, #0284c780, #0284c720);
   padding: 1em;
-  border-radius: 25px;
+  border-radius: 15px;
   color: white;
   margin-bottom: 1em;
   transition: 0.5s;
 }
 .blue-block::-webkit-scrollbar {
-  background: rgba(255, 255, 255, 0.5);
+  background: #0284c740;
   border-radius: 25px;
   width: 15px;
   height: 15px;
 }
 .blue-block::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.75);
+  background: #0284c7;
   border-radius: 25px;
   width: 50%;
   height: 15px;
 }
 .blue-block:hover {
   transform: scale(1.01);
-  box-shadow: 0px 0px 20px #0284c780;
+  box-shadow: 0px 0px 10px #0284c7;
 }
 /* blue block */
 
 /* white block */
 .white-block {
   overflow-y: auto;
-  background: linear-gradient(to bottom, #f0f9ff, #bae6fd);
+  border: 1px solid #f0f9ff;
+  background: linear-gradient(to bottom, #f0f9ff80, #f0f9ff20);
   padding: 1em;
-  border-radius: 25px;
-  color:#0369a1;
+  border-radius: 15px;
+  color:white;
   margin-bottom: 1em;
   transition: 0.5s;
 }
 .white-block::-webkit-scrollbar {
-  background: rgba(255, 255, 255, 0.5);
+  background: #f0f9ff40;
   border-radius: 25px;
   width: 15px;
   height: 15px;
 }
 .white-block::-webkit-scrollbar-thumb {
-  background: linear-gradient(to right,#0284c7bf,#075985bf);
+  background: #f0f9ff;
   border-radius: 25px;
   width: 50%;
   height: 15px;
 }
 .white-block:hover {
   transform: scale(1.01);
-  box-shadow: 0px 0px 20px #f0f9ff80;
+  box-shadow: 0px 0px 10px #f0f9ff;
 }
 /* white block */
 .tb {
@@ -190,7 +199,7 @@ body {
   padding: 1em;
 }
 .tb>div:nth-child(-n+3) {
-  border-bottom: solid 1px #0284c780;
+  border-bottom: solid 1px #f0f9ff40;
 }
 .ine {
   display:grid;
@@ -218,7 +227,7 @@ body {
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
   border: solid 1px black;
-  box-shadow:0 0 5px #07598580;
+  box-shadow:0 0 5px #0284c780;
   transition: background-color 1s ease, box-shadow 1s ease;
 }
 .gotop:hover {
@@ -244,7 +253,7 @@ body {
   border-top-left-radius: 25px;
   border-bottom-left-radius: 25px;
   border: solid 1px black;
-  box-shadow:0 0 5px #07598580;
+  box-shadow:0 0 5px #0284c780;
   transition: background-color 1s ease, color 1s ease, box-shadow 1s ease;
 }
 .sectionbtn:hover {
@@ -284,7 +293,7 @@ select.sectionbtn option {
   background-color: rgba(0,0,0,0.5);
   backdrop-filter: blur(5px);
   border: solid 1px black;
-  box-shadow:0 0 5px #07598580;
+  box-shadow:0 0 5px #0284c780;
   transition: background-color 1s ease, color 1s ease, box-shadow 1s ease;
 }
 .themebtn:hover {
@@ -333,69 +342,92 @@ select.sectionbtn option {
   }
 }
 
-/* darkth */
-.web.dark {
-  background-color: #082f49;
-}
-/* darkth */
-
 /* lightth */
 body.light {
-  background-color: #bae6fd;
-}
-body.light .contents-box {
-  background: linear-gradient(to bottom, #ffffff, #ebf7ff);
-  color: #5384d3;
-}
-body.light .contents-box > div > a {
-  color: #5384d3;
-}
-body.light .contents-box > div > a:hover {
-  color: #1c4fa1;
-}
-body.light .contentline {
-  border-right: 1px solid #5384d380;
-}
-body.light .tb>div:nth-child(-n+3) {
-  border-bottom: solid 1px #5384d380;
-}
-
-
-body.light .blue-block, body.light .title-box {
-  background: linear-gradient(to bottom, #58c1f5, #5384d3);
-  color: white;
-}
-body.light .blue-block:hover {
-  transform: scale(1.01);
-  box-shadow: 0px 0px 20px #58c1f580;
-}
-body.light .white-block:hover {
-  transform: scale(1.01);
-  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
-}
-body.light .white-block {
-  background: linear-gradient(to bottom, #ffffff, #ebf7ff);
-  color: #5384d3;
-}
-body.light .white-block::-webkit-scrollbar-thumb {
-  background: linear-gradient(
-    to right,
-    #58c1f5bf,
-    #5384d3bf
-  );
+  background-color: #cfebff;
 }
 
 body.light::-webkit-scrollbar {
-  background: rgba(255,255,255, 0.5);
-}
-body.light::-webkit-scrollbar-thumb {
-  background: #58c1f5bf;
+  background: #ffffff80;
 }
 
+body.light::-webkit-scrollbar-thumb {
+  background: #7ed4ff;
+}
+
+body.light .title-box {
+  color: #13435b;
+  border-color: #7ed4ff;
+  background: linear-gradient(to bottom, #7ed4ff80, #7ed4ff20);
+}
+
+body.light .contents-box {
+  color: #13435b;
+  border-color: #f0f9ff;
+  background: linear-gradient(to bottom, #f0f9ff80, #f0f9ff40);
+}
+
+body.light .contentline {
+  border-right: 1px solid #13435b40;
+}
+
+body.light .contents-box > div > a {
+  color: #13435b;
+}
+
+body.light .contents-box > div > a:hover {
+  background-color: #7ed4ff40;
+}
+
+body.light .blue-block {
+  color: #13435b;
+  border-color: #7ed4ff;
+  background: linear-gradient(to bottom, #7ed4ff80, #7ed4ff20);
+}
+
+body.light .blue-block::-webkit-scrollbar {
+  background: #7ed4ff40;
+}
+
+body.light .blue-block::-webkit-scrollbar-thumb {
+  background: #7ed4ff;
+}
+
+body.light .blue-block:hover {
+  box-shadow: 0px 0px 10px #7ed4ff;
+}
+
+body.light .white-block {
+  color: #13435b;
+  border-color: #f0f9ff;
+  background: linear-gradient(to bottom, #f0f9ff80, #f0f9ff40);
+}
+
+body.light .white-block::-webkit-scrollbar {
+  background: #f0f9ff40;
+}
+
+body.light .white-block::-webkit-scrollbar-thumb {
+  background: #f0f9ff;
+}
+
+body.light .white-block:hover {
+  box-shadow: 0px 0px 10px #f0f9ff;
+}
+
+body.light .tb>div:nth-child(-n+3) {
+  border-bottom: solid 1px #13435b40;
+}
+
+body.light .inex {
+  border-right: solid 1px #13435b40;
+}
+
+/*bottons*/
 body.light .gotop, body.light .themebtn {
   background-color: rgba(255,255,255,0.5);
   border: solid 1px #ffffff80;
-  box-shadow:0 0 5px #58c1f580;
+  box-shadow:0 0 5px #7ed4ff80;
   transition: background-color 1s ease, box-shadow 1s ease;
 }
 body.light .gotop:hover, body.light .themebtn:hover {
@@ -409,7 +441,7 @@ body.light .uppy, body.light .themeicon {
 body.light .sectionbtn {
   background-color: rgba(255,255,255,0.5);
   border: solid 1px #ffffff80;
-  box-shadow:0 0 5px #58c1f580;
+  box-shadow:0 0 5px #7ed4ff80;
   transition: background-color 1s ease, color 1s ease, box-shadow 1s ease;
 }
 body.light .sectionbtn:hover {
